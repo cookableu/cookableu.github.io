@@ -1,0 +1,105 @@
+a {
+    color: black;
+    background-color:silver;
+    border: 1px solid white;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    border: 1px solid silver;
+    padding: 7px 5px 5px 5px;
+    text-decoration: none;
+}
+a:hover{
+    color:white;
+    background-color: crimson;
+    border: 1px solid crimson;
+    padding: 15px 13px 13px 13px;
+    transition: background-color 0.5s,
+                color 0.5s,
+                padding 0.5s;
+}
+* {
+    box-sizing: border-box;
+}
+#flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    background-color:silver;
+}
+#flexbox div {
+    /*border: 1px solid red;*/
+    text-align: center;
+}
+.space1 {
+    flex-basis: 20%;
+    padding-right: 140px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.space5 {
+    flex-basis: 55%;
+    padding-left: 800px;
+}
+.space2, .space3 , .space4, .new {
+    flex-basis: 5%;
+    padding-top: 25px;
+    
+}
+.space6, .space7, .space8, .space9 {
+    flex-basis: 25%;
+}
+.box {
+    width: 350px;
+    height: 600px;
+    margin-left: 20px;
+    margin-top: 10px;
+    padding-top: 35px;
+    background-image: url("images/model4-cropped.jpg");
+    background-size: cover;
+}
+.frame {
+    width: 330px;
+    height: 600px;
+    margin-left: 20px;
+    margin-top: 10px;
+    padding-top: 35px;
+    background-image: url("images/model5-cropped.jpg");
+    background-size: cover;
+}
+.cat {
+    width: 30px;
+    height: 200px;
+    margin-right: 710px;
+    margin-top: 100px;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+}
+.less {
+    width: 500px;
+    height: 500px;
+    margin-left: 10px;
+    font-size: 3.5cm;
+    padding-top: 50px;
+}
+.space8, .space9 {
+    flex-basis: 25%;
+}
+.space6 {
+    flex-basis: 50%;
+}
+.portrait, .editorial {
+    width: 100px;
+    height: 25px;
+    font-size: smaller;
+    padding-right: 30px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.mug, .untitled {
+    width: 200px;
+    height: 100px;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 0.99cm;
+}
+/* ctrl+/ = comment */

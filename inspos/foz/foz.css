@@ -1,0 +1,121 @@
+body {
+        background-image: linear-gradient(180deg,
+                                rgba(0,0,0,0.4) 0%, 
+                                rgba(0,0,0,0.8) 100%),
+                                url("images/mateus-campos-felipe-cropped.jpg");
+        background-size:cover;
+}
+#grid, #grid2, #grid3 {
+    display: grid;
+    color: white;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    text-align: center;
+}
+/*.space, .slot, .shelf {
+    border: 1px solid red;
+}*/
+.space5,.shelf1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.space5 {
+    font-size: 2.5cm;
+}
+.space3 {
+    font-size: 1cm;
+}
+.space3 {
+    text-align: right;
+    padding-right: 30px;
+    font-family: fantasy;
+}
+.space1 {
+    text-align: left;
+    padding-left: 30px;
+}
+.space6 {
+    width: 30%;
+    height: 1cm;
+    padding-top: 20px;
+    margin-left: 250px;
+    text-align: center;
+}
+.slot4 {
+    grid-row-start: 2;
+    grid-row-end: 9;
+    height: 450px; 
+}
+.box {
+    width: 509px;
+    height: 339px;
+    position: relative;
+    top: 30px;
+    left: 30px;
+    background-image: url("images/face.jpg");
+}
+.box::before {
+    content: ' ';
+    display: block;
+    background-image: url("images/hand.jpg");
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 50px;
+    left: 350px;
+    /*z-index: -1;*/
+}
+.frame {
+    width: 500px;
+    height: 300px;
+    position: relative;
+    top: 30px;
+    left: 60px;
+    border: 10px solid yellow;
+}
+.frame::before {
+    content: ' ';
+    display: block;
+    background-image: url("images/sean-robertson-small.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    /*z-index: -1;*/
+}
+.shelf4 {
+    height: 600px;
+}
+.shelf3{
+    height: 600px;
+    padding-top: 450px;
+}
+.slide {
+    width: 100%;
+    height: 400px;
+    background-image: url("images/the-three-graces.jpg");
+}
+a {
+    color: black;
+    background-color:white;
+    border: 1px solid white;
+    text-align: center;
+    width: 100px;
+    height: 20px;
+    padding: 7px 5px 5px 5px;
+    margin: 0px 0px 0px 0px;
+    text-decoration: none;
+}
+a:hover{
+    color:white;
+    background-color: crimson;
+    border: 1px solid crimson;
+    padding: 15px 13px 13px 13px;
+    transition: background-color 0.5s,
+                color 0.5s,
+                padding 0.5s;
+}
